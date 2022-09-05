@@ -1,0 +1,17 @@
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.deps.json
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.runtimeconfig.json
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.dll
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\bin\Debug\net6.0\DataAccessLayer.pdb
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\bin\Debug\net6.0\EntityLayer.dll
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\bin\Debug\net6.0\EntityLayer.pdb
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.AssemblyInfo.cs
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.csproj.CopyComplete
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.dll
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\obj\Debug\net6.0\refint\DataAccessLayer.dll
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.pdb
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\obj\Debug\net6.0\DataAccessLayer.genruntimeconfig.cache
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\DataAccessLayer\obj\Debug\net6.0\ref\DataAccessLayer.dll

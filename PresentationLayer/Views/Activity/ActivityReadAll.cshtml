@@ -1,0 +1,74 @@
+﻿@*@model IEnumerable<EntityLayer.Concrete.Activity>*@
+
+@using EntityLayer.Concrete
+@model List<Activity>
+
+@{
+    ViewData["Title"] = "ActivityDetail";
+    Layout = "~/Views/Shared/IndividualLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container" style="margin-left:5px">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Etkinlik Id</th>
+                    <th>Etkinlik Adı</th>
+                    <th>Etkinlik Tarihi</th>
+                    <th>Etkinlik Açıklaması</th>
+                    <th>Etkinlik Adresi</th>
+                    <th>Etkinlik Kontenjanı</th>
+                    <th>Etkinlik Biletli Mi?</th>
+                    <th>Etkinlik Fiyat</th>
+                    <th>Aktif mi?</th>
+                    <th>Kategori Adı</th>
+                    <th>Şehir Adı</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.ActivityId</td>
+                        <td>@item.ActivityName</td>
+                        <td>@item.Date</td>
+                        <td>@item.Explanation</td>
+                        <td>@item.Address</td>
+                        <td>@item.Quota</td>
+                        <td>@item.IsItTicketed</td>
+                        <td>@item.Price</td>
+                        <td>@item.IsActive</td>
+                        <td>@item.Category?.CategoryName</td>
+                        <td>@item.CityId</td>
+                        
+                    </tr>
+                    
+                }
+            </tbody>
+
+        </table>
+
+        <hr />
+
+        <h2>Bilet Satışı Yapan Firmalar</h2>
+        <br />
+
+        @await Component.InvokeAsync("CompanyActivity",new {id=ViewBag.Id})
+
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿@model EntityLayer.Concrete.Company
+@{
+    ViewData["Title"] = "RegisterCompany";
+    Layout = "~/Views/Shared/IndividualLayout.cshtml";
+}
+<br />
+<h2>Firma Kayıt Olma Sayfası</h2>
+
+<section class="main-content-w3layouts-agileits">
+	<div class="container">
+		<h3 class="tittle">Kayıt ol</h3>
+		<div class="inner-sec">
+			<div class="login p-5 bg-light mx-auto mw-100">
+				@using(Html.BeginForm("Index","Register",FormMethod.Post))
+				{
+					<div class="form-row">
+						<div class="col-md-6 mb-3">
+							<label for="validationCustom01">Ad:</label>
+							@Html.TextBoxFor(x=>x.CompanyName, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.CompanyName,"",new {@class="text-danger"})
+							@*<input type="text" class="form-control" id="validationDefault01" name="CompanyName" placeholder="" required="">*@
+						</div>
+						<div class="col-md-6 mb-3">
+							<label for="validationCustom02">Web Sitesi:</label>
+							@Html.TextBoxFor(x=>x.CompanyWebSite, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.CompanyWebSite,"",new {@class="text-danger"})
+							@*<input type="text" class="form-control" id="validationDefault02" name="CompanyWebSite" placeholder="" required="">*@
+						</div>
+						<div class="col-md-6 mb-3">
+							<label for="validationCustom02">Mail:</label>
+							@Html.TextBoxFor(x=>x.CompanyMail, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.CompanyMail,"",new {@class="text-danger"})
+							@*<input type="text" class="form-control" id="validationDefault02" name="CompanyMail" placeholder="" required="">*@
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="exampleInputPassword1 mb-2">Password</label>
+							@Html.TextBoxFor(x=>x.CompanyPassword, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.CompanyPassword,"",new {@class="text-danger"})
+							@*<input type="password" class="form-control" id="password1" name="CompanyPassword" placeholder="" required="">*@
+						</div>
+						<div class="form-group col-md-6">
+							<label for="exampleInputPassword2 mb-2">Confirm Password</label>
+							@Html.TextBoxFor(x=>x.CompanyPassword, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.CompanyPassword,"",new {@class="text-danger"})
+							@*<input type="password" class="form-control" id="password2" name="CompanyPassword" placeholder="" required="">*@
+						</div>
+
+					</div>
+					<button type="submit" class="btn btn-primary submit mb-4">Kayıt ol</button>
+					
+				
+				}
+			</div>
+		</div>
+	</div>
+</section>

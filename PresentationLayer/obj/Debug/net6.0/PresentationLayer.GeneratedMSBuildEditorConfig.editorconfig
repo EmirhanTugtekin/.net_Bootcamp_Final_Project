@@ -1,0 +1,92 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PresentationLayer
+build_property.RootNamespace = PresentationLayer
+build_property.ProjectDir = D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\PresentationLayer\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\PresentationLayer
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Activity/ActivityReadAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdHlcQWN0aXZpdHlSZWFkQWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Activity/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdHlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/CompanyActivity/ListCompanyActivity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueUFjdGl2aXR5XExpc3RDb21wYW55QWN0aXZpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Login/LoginCompany.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW5Db21wYW55LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Login/LoginOrganizer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW5Pcmdhbml6ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Register/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Register/RegisterCompany.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcUmVnaXN0ZXJDb21wYW55LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Register/RegisterOrganizer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcUmVnaXN0ZXJPcmdhbml6ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Shared/Components/CompanyActivity/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ29tcGFueUFjdGl2aXR5XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Shared/IndividualLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEluZGl2aWR1YWxMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Belgelerim/yazılım/Techcareer Eğitim/CoreCampProject/PresentationLayer/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-xphr5dixgj

@@ -1,0 +1,14 @@
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\bin\Debug\net6.0\EntityLayer.runtimeconfig.json
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\obj\Debug\net6.0\EntityLayer.genruntimeconfig.cache
+D:\Belgelerim\yazılım\Techcareer Eğitim\CoreCampProject\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
