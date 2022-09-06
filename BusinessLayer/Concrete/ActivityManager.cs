@@ -3,9 +3,11 @@ using DataAccessLayer.Abstract;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Activity = EntityLayer.Concrete.Activity;
 
 namespace BusinessLayer.Concrete
 {
@@ -15,25 +17,6 @@ namespace BusinessLayer.Concrete
         public ActivityManager(IActivityDal activityDal)
         {
             _activityDal = activityDal;
-        }
-
-        public void AddActivity(Activity activity)
-        {
-            if (activity.ActivityName != "")
-            {
-                _activityDal.Insert(activity);
-                activity.IsActive = true;
-            }
-        }
-
-        public void DeleteActivity(Activity activity)
-        {
-            activity.IsActive = false;
-        }
-
-        public void UpdateActivity(Activity activity)
-        {
-            _activityDal.Update(activity);
         }
 
         public Activity GetById(int id)
@@ -59,6 +42,22 @@ namespace BusinessLayer.Concrete
         public List<Activity> GetListWithOrganizer()
         {
             throw new NotImplementedException();
+        }
+
+        public void AddT(Activity t)
+        {
+            _activityDal.Insert(t);
+            t.IsActive = true;
+        }
+
+        public void DeleteT(Activity t)
+        {
+            t.IsActive = false;
+        }
+
+        public void UpdateT(Activity t)
+        {
+            _activityDal.Update(t);
         }
     }
 }

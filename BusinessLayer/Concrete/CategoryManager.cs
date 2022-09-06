@@ -11,29 +11,10 @@ namespace BusinessLayer.Concrete
 {
     public class CategoryManager : ICategoryService
     {
-        ICategoryDal _categoryDal; //bunun yerine EfCategoryRepository'yi kullansaydık Dependency Injection yapmamış ve bağımlı bir yapı oluşturmuş olurduk
+        ICategoryDal _categoryDal; 
         public CategoryManager(ICategoryDal categoryDal)
         {
             _categoryDal = categoryDal;
-        }
-
-        public void AddCategory(Category category)
-        {
-            if (category.CategoryName != "")
-            {
-                _categoryDal.Insert(category);
-                category.IsActive = true;
-            }
-        }
-
-        public void DeleteCategory(Category category)
-        {
-            category.IsActive = false;
-        }
-
-        public void UpdateCategory(Category category)
-        {
-            _categoryDal.Update(category);
         }
 
         public Category GetById (int id)
@@ -45,5 +26,22 @@ namespace BusinessLayer.Concrete
         {
             return _categoryDal.GetListAll();
         }
+        //------------------------------------
+        public void AddT(Category t)
+        {
+            _categoryDal.Insert(t);
+            t.IsActive = true;
+        }
+
+        public void DeleteT(Category t)
+        {
+            t.IsActive = false;
+        }
+
+        public void UpdateT(Category t)
+        {
+            _categoryDal.Update(t);
+        }
+        
     }
 }

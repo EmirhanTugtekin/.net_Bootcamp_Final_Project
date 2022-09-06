@@ -18,12 +18,22 @@ namespace BusinessLayer.Concrete
             _companyActivityDal = companyActivityDal;
         }
 
-        public void AddCompanyActivity(CompanyActivity companyActivity)
+        public void AddCompanyToActivity(CompanyActivity companyActivity)
         {
             throw new NotImplementedException();
         }
 
-        public void AddCompanyToActivity(CompanyActivity companyActivity)
+        public void AddT(CompanyActivity t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteT(CompanyActivity t)
+        {
+            throw new NotImplementedException();
+        }
+
+        public CompanyActivity GetById(int id)
         {
             throw new NotImplementedException();
         }
@@ -31,6 +41,16 @@ namespace BusinessLayer.Concrete
         public List<CompanyActivity> GetList(int id)
         {
             return _companyActivityDal.GetListAll(x => x.ActivityId == id);
+        }
+
+        public List<CompanyActivity> GetList()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateT(CompanyActivity t)
+        {
+            throw new NotImplementedException();
         }
     }
 }

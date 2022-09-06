@@ -7,13 +7,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-	public interface IActivityService
+	public interface IActivityService:IGenericService<Activity>
 	{
-        public void AddActivity(Activity activity);
-        public void DeleteActivity(Activity activity);
-        public void UpdateActivity(Activity activity);
-        public Activity GetById(int id);
-        public List<Activity> GetList();
         List<Activity> GetListWithCategory();
         List<Activity> GetListWithOrganizer();
 	}

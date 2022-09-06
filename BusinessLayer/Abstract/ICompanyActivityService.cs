@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-    public interface ICompanyActivityService
+    public interface ICompanyActivityService:IGenericService<CompanyActivity>
     {
-        void AddCompanyActivity(CompanyActivity companyActivity);
         void AddCompanyToActivity(CompanyActivity companyActivity);
-        List<CompanyActivity> GetList(int id);
     }
 }

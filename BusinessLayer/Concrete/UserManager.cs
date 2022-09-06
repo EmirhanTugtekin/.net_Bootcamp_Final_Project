@@ -18,15 +18,6 @@ namespace BusinessLayer.Concrete
             _userDal = userDal;
         }
 
-        public void AddUser(User user)
-        {
-            if (user.UserName != "" && user.UserSurname != "" && user.UserPassword.Length >= 8 && IsAlphaNumeric(user.UserPassword) == true)
-            {
-                _userDal.Insert(user);
-                user.IsActive = true;
-                //user.RoleId = 1;
-            }
-        }
         public static bool IsAlphaNumeric(string inputAlphabet)
         {
             const string expression = @"^[A-Za-z0-9]+$";
@@ -34,16 +25,6 @@ namespace BusinessLayer.Concrete
             Regex regex = new Regex(expression);
             return regex.IsMatch(inputAlphabet);
         }// harf ve rakam içeriyorsa true döner
-
-        public void DeleteUser(User user)
-        {
-            user.IsActive = false;
-        }
-
-        public void UpdateUser(User user)
-        {
-            _userDal.Update(user);
-        }
 
         public User GetById(int id)
         {
@@ -53,6 +34,26 @@ namespace BusinessLayer.Concrete
         public List<User> GetList()
         {
             return _userDal.GetListAll();
+        }
+
+        public void AddT(User t)
+        {
+            if (t.UserPassword.Length >= 8 && IsAlphaNumeric(t.UserPassword) == true)
+            {
+                _userDal.Insert(t);
+                t.IsActive = true;
+            }
+            
+        }
+
+        public void DeleteT(User t)
+        {
+            t.IsActive = false;
+        }
+
+        public void UpdateT(User t)
+        {
+            _userDal.Update(t);
         }
     }
 }
