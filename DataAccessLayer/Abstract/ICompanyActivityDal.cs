@@ -9,5 +9,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface ICompanyActivityDal : IGenericDal<CompanyActivity>
     {
+        List<CompanyActivity> GetListWithEverything(int id);
     }
 }

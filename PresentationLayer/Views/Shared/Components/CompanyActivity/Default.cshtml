@@ -1,12 +1,8 @@
 ﻿@model IEnumerable<EntityLayer.Concrete.CompanyActivity>
-
 <hr />
-
-
 @foreach(var item in Model)
 {
-    <p>@item.CompanyActivityId</p>
-    <p>Satan Firma: @item.CompanyId</p>
-    <p>@item.ActivityId</p>
+    <p>Satan Firma Adı: @item.Company.CompanyName</p>
+    <p>Satan Firma Web Sitesi: @item.Company.CompanyWebSite</p>
     <hr />
 }

@@ -38,9 +38,9 @@ namespace BusinessLayer.Concrete
             throw new NotImplementedException();
         }
 
-        public List<CompanyActivity> GetList(int id)
+        public List<CompanyActivity> GetListWithEverything(int id)
         {
-            return _companyActivityDal.GetListAll(x => x.ActivityId == id);
+            return _companyActivityDal.GetListWithEverything(id);
         }
 
         public List<CompanyActivity> GetList()

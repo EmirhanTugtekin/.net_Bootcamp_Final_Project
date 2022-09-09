@@ -23,12 +23,16 @@ namespace DataAccessLayer.EntityFramework
                 
         }
 
-        public List<Activity> GetListWithCategory2(int id)
+        public List<Activity> GetListWithEverything(int id)
         {
             using (var c = new Context())
             {
-                return c.Activities.Include(x => x.Category).Where(x => x.ActivityId == id).ToList();
+                return c.Activities.Include(x => x.Category).Include(x=>x.City).Include(x=>x.Organizer).Where(x => x.ActivityId == id).ToList();
             }
         }
+
+        
+
+        
     }
 }

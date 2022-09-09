@@ -9,7 +9,7 @@ namespace PresentationLayer.ViewComponents.CompanyActivity
         CompanyActivityManager companyActivityManager = new CompanyActivityManager(new EfCompanyActivityRepository());
         public IViewComponentResult Invoke(int id)
         {
-            var values = companyActivityManager.GetList(id);
+            var values = companyActivityManager.GetListWithEverything(id);
             return View(values);
         }
     }

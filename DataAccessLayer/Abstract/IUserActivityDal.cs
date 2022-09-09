@@ -9,5 +9,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface IUserActivityDal:IGenericDal<UserActivity>
     {
+        public List<UserActivity> GetListWithEverything(int id);
     }
 }

@@ -1,5 +1,4 @@
-﻿@using EntityLayer.Concrete
-@model List<UserActivity>
+﻿@model IEnumerable<EntityLayer.Concrete.UserActivity>
 @{
     ViewData["Title"] = "MyActivities";
     Layout = "~/Views/Shared/IndividualLayout.cshtml";
@@ -20,16 +19,21 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Kategori Id</th>
-                    <th>Kategori Adı</th>
-                    <th>Aktif mi?</th>
+                    <th>Etkinlik Adı</th>
+                    <th>Etkinlik Açıklaması</th>
+                    <th>Etkinlik Tarihi</th>
+                    <th>Etkinlik Yeri</th>
+                    
                 </tr>
             </thead>
             <tbody>
                 @foreach (var item in Model)
                 {
                     <tr>
-                        
+                        <th>@item.Activity.ActivityName</th>
+                        <th>@item.Activity.Explanation</th>
+                        <th>@item.Activity.Date</th>
+                        <th>@item.Activity.Address</th>
                     </tr>
                 }
             </tbody>

@@ -10,6 +10,7 @@ namespace PresentationLayer.Controllers
     
 	public class ActivityController : Controller
 	{
+        UserActivityManager userActivityManager = new UserActivityManager(new EfUserActivityRepository());
         ActivityManager activityManager = new ActivityManager(new EfActivityRepository());
         public IActionResult Index()
 		{
@@ -19,7 +20,8 @@ namespace PresentationLayer.Controllers
         public IActionResult ActivityReadAll(int id)
         {
             ViewBag.Id = id;
-            var values = activityManager.GetListWithCategory2(id);
+            var values = activityManager.GetListWithEverything(id);
+
             return View(values);
         }
         [HttpGet]
@@ -38,6 +40,7 @@ namespace PresentationLayer.Controllers
         {
             return RedirectToAction("MyActivities", "User");
         }
+        
 
     }
 }

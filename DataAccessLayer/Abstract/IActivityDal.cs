@@ -10,6 +10,7 @@ namespace DataAccessLayer.Abstract
     public interface IActivityDal : IGenericDal<Activity>
     {
         List<Activity> GetListWithCategory();
-        List<Activity> GetListWithCategory2(int id);
+        List<Activity> GetListWithEverything(int id);
+
     }
 }

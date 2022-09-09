@@ -39,9 +39,9 @@ namespace BusinessLayer.Concrete
             return _activityDal.GetListWithCategory();
         }
 
-        public List<Activity> GetListWithOrganizer()
+        public List<Activity> GetListWithEverything(int id)
         {
-            throw new NotImplementedException();
+            return _activityDal.GetListWithEverything(id);
         }
 
         public void AddT(Activity t)
@@ -60,9 +60,8 @@ namespace BusinessLayer.Concrete
             _activityDal.Update(t);
         }
 
-        public List<Activity> GetListWithCategory2(int id)
-        {
-            return _activityDal.GetListWithCategory2(id);
-        }
+        
+
+        
     }
 }

@@ -35,11 +35,9 @@
 										</li>
 										@if (User.IsInRole("User"))
 											{
-											<li>
-												<a href="#">
-													<a href="/Activity/JoinActivity/@item.ActivityId" class="btn btn-primary read-m">Etkinliğe Katıl</a>
-												</a>
-											</li>
+												<li>
+													<a href="/Activity/JoinActivity/@item.ActivityId" class="btn btn-warning read-m">Etkinliğe Katıl</a>
+												</li>
 											}
 									</ul>
 									<h5 class="card-title">
@@ -50,6 +48,8 @@
 								</div>
 							</div>
 						}
+						
+						
 						
 					</div>
 					<!--//left-->

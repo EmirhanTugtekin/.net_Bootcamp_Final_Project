@@ -6,7 +6,7 @@ namespace PresentationLayer.Controllers
 {
     public class CompanyActivityController : Controller
     {
-        CompanyActivityManager companyManager = new CompanyActivityManager(new EfCompanyActivityRepository());
+        CompanyActivityManager companyActivityManager = new CompanyActivityManager(new EfCompanyActivityRepository());
         public IActionResult Index()
         {
             return View();
@@ -17,7 +17,7 @@ namespace PresentationLayer.Controllers
         }
         public PartialViewResult ListCompanyActivity(int id)
         {
-            var values=companyManager.GetList(id);
+            var values= companyActivityManager.GetListWithEverything(id);
             return PartialView(values);
         }
 

@@ -10,6 +10,6 @@ namespace BusinessLayer.Abstract
 {
     public interface IUserActivityService:IGenericService<UserActivity>
     {
-       
+        List<UserActivity> GetListWithEverything(int id);
     }
 }

@@ -38,6 +38,11 @@ namespace BusinessLayer.Concrete
             return _userActivityDal.GetListAll();
         }
 
+        public List<UserActivity> GetListWithEverything(int id)
+        {
+            return _userActivityDal.GetListWithEverything(id);
+        }
+
         public void UpdateT(UserActivity t)
         {
             throw new NotImplementedException();

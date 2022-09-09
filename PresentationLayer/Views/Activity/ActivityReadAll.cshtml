@@ -34,6 +34,7 @@
                     <th>Aktif mi?</th>
                     <th>Kategori Adı</th>
                     <th>Şehir Adı</th>
+                    <th>Organizatör Adı</th>
                 </tr>
             </thead>
             <tbody>
@@ -50,7 +51,8 @@
                         <td>@item.Price</td>
                         <td>@item.IsActive</td>
                         <td>@item.Category.CategoryName</td>
-                        <td>@item.CityId</td>
+                        <td>@item.City.CityName</td>
+                        <td>@item.Organizer.OrganizerName</td>
                         
                     </tr>
                     
@@ -61,8 +63,7 @@
 
         <hr />
 
-        <h2>Bilet Satışı Yapan Firmalar</h2>
-        <br />
+        <h3>Bilet Satışı Yapan Firmalar</h3>
 
         @await Component.InvokeAsync("CompanyActivity",new {id=ViewBag.Id})
 
