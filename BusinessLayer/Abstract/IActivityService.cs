@@ -10,6 +10,7 @@ namespace BusinessLayer.Abstract
 	public interface IActivityService:IGenericService<Activity>
 	{
         List<Activity> GetListWithCategory();
+        List<Activity> GetListWithCategory2(int id);
         List<Activity> GetListWithOrganizer();
 	}
 }

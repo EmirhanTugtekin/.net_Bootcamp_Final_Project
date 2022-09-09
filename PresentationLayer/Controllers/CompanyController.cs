@@ -9,7 +9,7 @@ namespace PresentationLayer.Controllers
         
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Activity");
         }
     }
 }

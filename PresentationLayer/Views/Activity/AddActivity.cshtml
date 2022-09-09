@@ -1,0 +1,77 @@
+﻿@model EntityLayer.Concrete.Activity
+@{
+    ViewData["Title"] = "AddActivity";
+	Layout = "~/Views/Shared/IndividualLayout.cshtml";
+}
+
+<br />
+<h2>Yeni Etkinlik Ekleme Sayfası</h2>
+
+<section class="main-content-w3layouts-agileits">
+	<div class="container">
+		<h3 class="tittle">Yeni Etkinlik Ekle</h3>
+		<div class="inner-sec">
+			<div class="login p-5 bg-light mx-auto mw-100">
+				@using(Html.BeginForm("AddActivity","Activity",FormMethod.Post))
+				{
+					<div class="form-row">
+						<div class="col-md-6 mb-3">
+							<label for="validationCustom01">Ad:</label>
+							@Html.TextBoxFor(x=>x.ActivityName, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.ActivityName,"",new {@class="text-danger"})						
+						</div>
+						<div class="col-md-6 mb-3">
+							<label for="validationCustom02">Tarih:</label>
+							@Html.TextBoxFor(x=>x.Date, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.Date,"",new {@class="text-danger"})
+						</div>
+						<div class="col-md-6 mb-3">
+							<label for="validationCustom02">Açıklama:</label>
+							@Html.TextBoxFor(x=>x.Explanation, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.Explanation,"",new {@class="text-danger"})
+						</div>
+						<div class="col-md-6 mb-3">
+							<label for="validationCustom02">Adres:</label>
+							@Html.TextBoxFor(x=>x.Address, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.Address,"",new {@class="text-danger"})
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="exampleInputPassword1 mb-2">Kota:</label>
+							@Html.TextBoxFor(x=>x.Quota, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.Quota,"",new {@class="text-danger"})
+						</div>
+						<div class="form-group col-md-6">
+							<label for="exampleInputPassword2 mb-2">Fiyat:</label>
+							@Html.TextBoxFor(x=>x.Price, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.Price,"",new {@class="text-danger"})
+						</div>
+						<div class="form-group col-md-6">
+							<label for="exampleInputPassword2 mb-2">Şehir:</label>
+							@Html.TextBoxFor(x=>x.CityId, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.CityId,"",new {@class="text-danger"})
+						</div>
+						<div class="form-group col-md-6">
+							<label for="exampleInputPassword2 mb-2">Kategori:</label>
+							@Html.TextBoxFor(x=>x.CategoryId, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.CategoryId,"",new {@class="text-danger"})
+						</div>
+
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="exampleInputPassword1 mb-2">Organizatör</label>
+							@Html.TextBoxFor(x=>x.OrganizerId, new {@class="form-control"})
+							@Html.ValidationMessageFor(x=>x.OrganizerId,"",new {@class="text-danger"})
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary submit mb-4">Ekle</button>
+					
+				
+				}
+			</div>
+		</div>
+	</div>
+</section>
+

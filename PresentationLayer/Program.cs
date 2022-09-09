@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//builder.Services.AddSession();
+builder.Services.AddSession();
 builder.Services.AddMvc(config =>
 {
     var policy = new AuthorizationPolicyBuilder()
@@ -22,6 +22,8 @@ builder.Services.AddAuthentication(
     .AddCookie(x =>
     {
         x.LoginPath = "/Login/LoginOrganizer";
+        x.LoginPath = "/Login/LoginAdmin";
+        
     }
 );
 

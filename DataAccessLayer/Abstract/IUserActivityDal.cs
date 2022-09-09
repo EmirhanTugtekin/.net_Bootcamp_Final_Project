@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    internal interface IUserActivityDal:IGenericDal<UserActivity>
+    public interface IUserActivityDal:IGenericDal<UserActivity>
     {
     }
 }

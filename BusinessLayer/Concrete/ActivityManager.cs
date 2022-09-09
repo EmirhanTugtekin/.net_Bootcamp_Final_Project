@@ -36,7 +36,7 @@ namespace BusinessLayer.Concrete
 
         public List<Activity> GetListWithCategory()
         {
-            throw new NotImplementedException();
+            return _activityDal.GetListWithCategory();
         }
 
         public List<Activity> GetListWithOrganizer()
@@ -58,6 +58,11 @@ namespace BusinessLayer.Concrete
         public void UpdateT(Activity t)
         {
             _activityDal.Update(t);
+        }
+
+        public List<Activity> GetListWithCategory2(int id)
+        {
+            return _activityDal.GetListWithCategory2(id);
         }
     }
 }

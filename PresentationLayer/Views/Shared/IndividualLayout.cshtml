@@ -64,6 +64,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<i class="fas fa-lock"></i> Giriş(Firma)
 						</a>
 					</span>
+					<span class="mx-lg-4 mx-md-2  mx-1">
+						<a href="/Login/LoginAdmin">
+							<i class="fas fa-lock"></i> Giriş(Admin)
+						</a>
+					</span>
 					<span>
 						<a href="/Register/Index">
 							<i class="far fa-user"></i> Kayıt ol(Kullanıcı) 
@@ -116,12 +121,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Şehirler</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="/Category/Index/">Kategoriler</a>
-						</li>
+						@if (User.IsInRole("Admin"))
+						{
+							<li class="nav-item">
+								<a class="nav-link" href="/City/Index/">Şehirler</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/Category/Index/">Kategoriler</a>
+							</li>
+						}
+
 						<li class="nav-item dropdown active">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
 							    aria-expanded="false">
@@ -141,17 +150,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<li class="nav-item">
 							<a class="nav-link" href="#">Sorgulamalar</a>
 						</li>
+						@if (User.IsInRole("Organizer"))
+						{
+							<li class="nav-item">
+								<a class="nav-link" href="/Activity/AddActivity/">Yeni Organizasyon Ekle</a>
+							</li>
+						}
+						@if (User.IsInRole("User"))
+						{
+							<li class="nav-item">
+								<a class="nav-link" href="/User/MyActivities/">Katıldığım Etkinlikler</a>
+							</li>
+						}
 
 					</ul>
-					<form action="#" method="post" class="form-inline my-2 my-lg-0 header-search">
-						<input class="form-control mr-sm-2" type="search" placeholder="Search here..." name="Search" required="">
-						<button class="btn btn1 my-2 my-sm-0" type="submit">
-							<i class="fas fa-search"></i>
-						</button>
-					</form>
-
-
-
 				</div>
 			</nav>
 

@@ -1,0 +1,43 @@
+﻿@using EntityLayer.Concrete
+@model List<City>
+
+@{
+    Layout = "~/Views/Shared/IndividualLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Şehir Id</th>
+                    <th>Şehir Adı</th>
+                    <th>Aktif mi?</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.CityId</td>
+                        <td>@item.CityName</td>
+                        <td>@item.IsActive</td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+    </div>
+</body>
+</html>

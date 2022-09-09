@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,6 +21,14 @@ namespace DataAccessLayer.EntityFramework
                 return c.Activities.Include(x => x.Category).ToList();
             }
                 
+        }
+
+        public List<Activity> GetListWithCategory2(int id)
+        {
+            using (var c = new Context())
+            {
+                return c.Activities.Include(x => x.Category).Where(x => x.ActivityId == id).ToList();
+            }
         }
     }
 }
